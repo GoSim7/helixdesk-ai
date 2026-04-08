@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: ai-customer-platform-control-api
+Version: 0.1.0
+Summary: Control API for Chatwoot and AstrBot unified customer platform
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi<1.0.0,>=0.115.0
+Requires-Dist: uvicorn[standard]<1.0.0,>=0.32.0
+Requires-Dist: sqlalchemy<3.0.0,>=2.0.36
+Requires-Dist: pydantic-settings<3.0.0,>=2.6.0
+Requires-Dist: apscheduler<4.0.0,>=3.10.4
+Requires-Dist: httpx<1.0.0,>=0.28.0
+Requires-Dist: psycopg[binary]<4.0.0,>=3.2.0
+Provides-Extra: dev
+Requires-Dist: pytest<9.0.0,>=8.3.0; extra == "dev"
+
+# Control API
+
+Run locally:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python -m pip install -e .[dev]
+.\.venv\Scripts\python -m uvicorn app.main:app --reload
+```
+
+Default local database:
+
+- `sqlite:///./data/app.db`
+
+Key endpoints:
+
+- `GET /api/admin/system-settings`
+- `POST /api/runtime/route-message`
+- `GET /api/runtime/health`
