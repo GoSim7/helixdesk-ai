@@ -1,5 +1,7 @@
 # HelixDesk AI
 
+[English](README.md) | [绠€浣撲腑鏂嘳(README.zh-CN.md)
+
 HelixDesk AI is a unified AI customer service platform that stitches together `Chatwoot` and `AstrBot` with an admin-controlled orchestration layer.
 
 The goal is simple: keep `Chatwoot` as the customer support operating desk, keep `AstrBot` as the AI engine, and add a clean control plane in the middle so administrators can configure AI presets, schedule AI on/off windows, hand conversations over to humans, and restore AI automatically when needed.
